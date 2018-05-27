@@ -1,0 +1,37 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=
+    
+    // To remote debug the demo projets with Visual Studio Code:
+    // 1) Install "Debugger for Chrome" extension: 
+    //    https://code.visualstudio.com/docs/nodejs/reactjs-tutorial#_debugging-react
+    // 2) Run Chrome with remote debuggin enabled:
+    //    C:\Program Files (x86)\Google\Chrome\Application>chrome.exe --remote-debugging-port=9229
+    //   
+    // Before you run chrome like this:
+    // - make sure all chrome processes are killed (e.g. with Task Manager)
+    // - make sure that chrome doesn't listen to any ports anymore (e.g. with "Resource Monitor")
+    //   If chrome still listens to some ports get the PID and kill the process (e.g. taskkill.exe /PID 2668 /F)
+    //
+    // Finally, after chrome runs with remote debug enabled you should be able to access via GET:
+    // http://127.0.0.1:9229/ 
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach project 'vs-code-tutorial' to chrome debugger.",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach project '002' to chrome debugger.",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}/002",
+            "sourceMaps": true
+        }
+    ]
+}
