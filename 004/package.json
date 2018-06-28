@@ -1,0 +1,26 @@
+{
+  "description": "Redux example",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Eden33/react-playground.git"
+  },
+  "scripts": {
+    "start": "node devserver.js"
+  },
+  "author": "Eduard Gopp",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.8.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  }
+}
