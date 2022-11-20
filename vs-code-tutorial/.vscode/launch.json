@@ -5,11 +5,28 @@
     "version": "0.2.0",
     "configurations": [
         {
+            // use chrome browser without any extensions
+
             "type": "chrome",
             "request": "launch",
             "name": "Launch debugger",
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            // use chrome browser with your installed extensions 
+
+            /**
+            * 1. chrome.exe --remote-debugging-port=9222
+            * 2. launch application: npm start
+            * 3. go to application
+            * 4. Attach debugger
+            */
+            "type": "chrome",
+            "request": "attach",
+            "name": "Attach debugger",
+            "webRoot": "${workspaceFolder}",
+            "port": 9222
         }
     ]
 }
