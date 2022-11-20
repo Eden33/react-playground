@@ -42,7 +42,7 @@ export default class EventCardList extends React.Component {
      * @param {number} eventId 
      */
     onRegistrationClick(eventId) {
-        this.setState(function(prevState, props){
+        this.setState(function(prevState, props) {
            prevState.eventTotalRegistrationCount += 1;
            prevState.eventData = prevState.eventData.map(
                e => e.eventId !== eventId ? 

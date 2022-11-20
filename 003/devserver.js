@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-const port = 8081;
+const port = 8080;
 
 const config = {
   mode: 'development',
